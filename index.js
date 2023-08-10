@@ -27,12 +27,11 @@ newRainbow.splice(3, 0, 'Gave', 'Battle')
 console.log(newRainbow) //['Richard','Of','York','Gave','Battle','In','Vain']
 
 
-rainList = newRainbow.join(`</li> <li>`);
+rainList = newRainbow.join(`</li><li>`);
 
-
-document.write(`<ul>
+document.write(`
 <li>
-${rainList}
+${newRainbow}
 </li>
-</ul>
+
 `)
