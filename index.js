@@ -26,12 +26,13 @@ console.log(newRainbow) //'richard' 'of', 'york', 'in 'vain'
 newRainbow.splice(3, 0, 'Gave', 'Battle')
 console.log(newRainbow) //['Richard','Of','York','Gave','Battle','In','Vain']
 
-arr = JSON.parse(JSON.stringify(newRainbow));
 
-
-
-rainList = newRainbow.join(`</li><li>`);
+rainList = newRainbow.join(`</li> <li>`);
 
 
 document.write(`<ul>
-   <li>${rainList}</li></ul>`);
+<li>
+${rainList}
+</li>
+</ul>
+`)
